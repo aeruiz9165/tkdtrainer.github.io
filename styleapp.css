@@ -1,0 +1,435 @@
+body {
+    background-color: #000023;
+}
+
+.active {
+    color: white;
+}
+
+
+/* Sidebar links */
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+
+/* Active/current link */
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+/* Links on mouse-over */
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+
+/*home page*/
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 0%;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+    font-size: 5em;
+    margin-top: 0%;
+}
+
+.buttons1 {
+    width: 30%;
+    height: 30%;
+    padding: 0px;
+    background-color: #cce6ff;
+    border-radius: 30px;
+    margin: 5px auto;
+    font-size: 40px;
+    cursor: pointer;
+    outline: 0;
+    box-shadow: none;
+}
+
+.button1:hover {
+    background-color: darkblue;
+    padding: 20px 60px;
+}
+
+.yellow {
+    width: 30%;
+    height: 30%;
+    padding: 0px;
+    background-color: rgb(253, 253, 131);
+    border-radius: 30px;
+    margin: 5px auto;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.yellow:hover {
+    background-color: yellow;
+}
+
+.orange {
+    width: 30%;
+    height: 30%;
+    padding: 0px;
+    background-color: rgb(243, 192, 96);
+    border-radius: 30px;
+    margin: 5px auto;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.orange:hover {
+    background-color: orange;
+}
+
+.green {
+    width: 30%;
+    height: 30%;
+    padding: 0px;
+    background-color: rgb(122, 238, 122);
+    border-radius: 30px;
+    margin: 5px auto;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.green:hover {
+    background-color: green;
+}
+
+.blue {
+    width: 30%;
+    height: 30%;
+    padding: 0px;
+    background-color: rgb(143, 191, 253);
+    border-radius: 30px;
+    margin: 5px auto;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.blue:hover {
+    background-color: blue;
+}
+
+.brown {
+    width: 30%;
+    height: 30%;
+    padding: 0px;
+    background-color: rgba(163, 81, 81, 0.699);
+    border-radius: 30px;
+    margin: 5px auto;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.brown:hover {
+    background-color: brown;
+}
+
+.black {
+    width: 30%;
+    height: 30%;
+    padding: 0px;
+    background-color: rgb(78, 75, 75);
+    border-radius: 30px;
+    margin: 5px auto;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.black:hover {
+    background-color: black;
+    color: white;
+}
+
+.red {
+    width: 30%;
+    height: 30%;
+    padding: 0px;
+    background-color: rgb(248, 99, 99);
+    border-radius: 30px;
+    margin: 5px auto;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.red:hover {
+    background-color: red;
+}
+
+.buttons1:hover {
+    background-color: blue;
+}
+
+
+/*sparring page*/
+
+.sparringoptions {
+    text-align: center;
+}
+
+p {
+    background-color: #fff;
+    display: inline-flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.optionstable {
+    margin: 20px auto;
+}
+
+.gobtn {
+    margin: 5px auto;
+    width: 30%;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+.name {
+    font-size: 25px;
+}
+
+
+/* timer page*/
+
+.timerpage,
+.timer {
+    min-height: 100%;
+}
+
+.timerpage {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.timer {
+    background: #000023;
+    min-height: 100%;
+    width: 100%;
+    /* vertically aligns element */
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.container {
+    width: 70%;
+    background: royalblue;
+    border-radius: 10px;
+    padding: 2rem;
+    /* horizontally aligns element */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 100px 3px royalblue;
+}
+
+.subContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input[type="number"],
+#colonStyle {
+    -webkit-transition: background 1s, color 1s, font-size 1s;
+    transition: background 1s, color 1s, font-size 1s;
+}
+
+input {
+    font-size: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+    /* gives equal widths to flex-cards */
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkitflex: 1;
+    /* makes all flex-cards have the same height */
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+}
+
+form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+
+.colon {
+    font-size: 4rem;
+    color: white;
+    font-family: monospace;
+    -webkit-transition: text-shadow 1s, font-size 1s, color 1s, background 1s;
+    transition: text-shadow 1s, font-size 1s, color 1s, background 1s;
+}
+
+.form_active {
+    background: royalblue;
+    color: gold;
+    font-size: 6rem;
+    text-shadow: 0px 0px 4px 3px navy;
+}
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+}
+
+.progress_styled {
+    width: 100%;
+    line-height: 2;
+    height: 3rem;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #000023;
+    border-radius: 0px 0px 10px 10px;
+    background-color: clear;
+    border: 5px solid blue;
+    box-shadow: inset 10px 10px 21px rgba(240, 240, 240, 0.1);
+}
+
+progress::-webkit-progress-value {
+    background: #d3e2dc;
+    background: linear-gradient(to bottom, #d3e2dc 1%, #cde8dd 49%, #d3e2dc 100%);
+    background: -moz-linear-gradient(top, #d3e2dc 1%, #cde8dd 49%, #d3e2dc 100%);
+    background: -webkit-linear-gradient(top, gold 1%, darkgoldenrod 49%, goldenrod 100%);
+    background: -o-linear-gradient(top, gold 1%, darkgoldenrod 49%, goldenrod 100%);
+    background: -ms-linear-gradient(top, gold 1%, darkgoldenrod 49%, goldenrod 100%);
+    border-radius: 10px;
+    transition: width 1s linear;
+}
+
+
+/* timer experiment */
+
+#startButton,
+#resetButton {
+    background: gold;
+    color: navy;
+    box-shadow: 0px 0px 13px 2px navy;
+    -webkit-transition: text-shadow 0.4s, box-shadow 0.5s, background 0.3s, color 0.2s;
+    transition: text-shadow 0.4s, box-shadow 0.5s, background 0.3s, color 0.2s;
+    border: none;
+}
+
+#startButton:hover,
+#resetButton:hover {
+    box-shadow: 0px 0px 0px 0px transparent;
+    background: navy;
+    color: gold;
+}
+
+@media screen and (max-width: 34em) {
+    .form_active {
+        font-size: 4.5rem;
+    }
+}
+
+a {
+    min-height: 100%;
+    height: auto;
+}
+
+.name {
+    color: white;
+}
+
+.video {
+    padding-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.snappics {
+    padding-left: 20px;
+}
+
+.axpics {
+    padding-left: 130px;
+}
+
+.roundhousepics {
+    padding-left: 40px;
+}
+
+.sidepics {
+    padding-left: 25px;
+}
+
+.backpics {
+    padding-left: 25px;
+}

@@ -1,0 +1,31 @@
+<!-- make a timer-->
+<!DOCTYPEHTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styleapp.css">
+    <a class="active" href="Trainer.html">Home</a>
+    <a class="active" href="kicks.html">Back</a>
+</head>
+
+<body>
+    <div class="container">
+        <div class="subContainer">
+            <form id="numbersForm">
+                <input id="minutesInput" type="number" min="0" placeholder="Minutes">
+                <span id="colonStyle" class="colon">:</span>
+                <input id="secondsInput" type="number" min="0" max="60" maxlength="2" step="5" placeholder="Seconds" value="">
+            </form>
+            <form>
+                <input id="startButton" type="button" placeholder="Start" value="Start">
+                <span class="colon">&nbsp;</span>
+                <input id="resetButton" type="button" placeholder="reset" value="Reset">
+            </form>
+        </div>
+        <progress id="progressBar" max="0" value="0" class="progress_styled"></progress>
+
+    </div>
+    <script scr="app.js"></script>
+</body>
+
+</html>
